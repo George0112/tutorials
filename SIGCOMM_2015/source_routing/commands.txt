@@ -1,0 +1,4 @@
+table_set_default route_pkt route 0
+table_add route_pkt route 0x0a000001/32 => 1
+table_add route_pkt route 0x0a000002/32 => 2
+table_add route_pkt broadcast 0xffffffff/32 => 1
